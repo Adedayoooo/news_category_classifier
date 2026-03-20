@@ -1,0 +1,61 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual Environments
+venv/
+env/
+ENV/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# Environment variables & secrets
+.env
+.env.local
+kaggle.json
+
+# Model files (use HuggingFace Hub instead)
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.h5
+*.ckpt
+final_model/
+model/
+checkpoint-*/
+results/
+
+# Data files (link to source instead)
+*.csv
+*.json
+data/
+dataset/
+datasets/
+
+# Logs
+*.log
+logs/
+
+# Training outputs
+runs/
+outputs/
+wandb/
+
+# System
+.DS_Store
+Thumbs.db
