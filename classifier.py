@@ -9,7 +9,7 @@ def load_tokenizer_and_model():
     model.to(device)
     return tokenizer, model, device
 
-def predict_sentiment(news:str,tokenizer,model, device):
+def predict_category(news:str,tokenizer,model, device):
     inputs = tokenizer(
         news ,
         return_tensors="pt",
@@ -42,3 +42,7 @@ def predict_sentiment(news:str,tokenizer,model, device):
     prediction = category_map[predicted_class_id]
     print(f"News classification result: {prediction}, with confidence level of: {confidence:.2f}")
     return prediction, confidence
+if __name__=="__main__":
+    tokenizer, model, device=load_tokenizer_and_model()
+    news=""
+    predict_category(news, tokenizer,model,device)
